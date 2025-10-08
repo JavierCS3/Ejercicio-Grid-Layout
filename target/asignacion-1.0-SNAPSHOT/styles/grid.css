@@ -1,0 +1,41 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 8 oct 2025, 4:18:08 p.m.
+    Author     : javie
+*/
+
+body {
+  background-color: lightgray;
+  color: white;
+  font-size: 100px;
+}
+
+header, nav, aside, main, section, footer {
+  border: 2px solid black;
+  padding: 10px;
+  text-align: center;
+}
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "nav nav"
+    "aside main"
+    "aside section"
+    "footer footer";
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: auto auto auto auto;
+  gap: 10px;
+  height: 100vh;
+}
+
+header { grid-area: header; background: cadetblue; }
+nav { grid-area: nav; background: chartreuse; }
+aside { grid-area: aside; background: palegreen;}
+main { grid-area: main; background: steelblue; }
+section { background: lightcyan; }
+footer { grid-area: footer; background: turquoise; }
